@@ -72,7 +72,7 @@ class Agent_net(object):
         self.lr = args.lr
         self.gamma = args.gamma
         self.use_grad_clip = args.use_grad_clip
-        self.batch_size = args.batch_size  # 这里的batch_size代表有多少个episode
+        self.batch_size = args.batch_size 
         self.target_update_freq = args.target_update_freq
         self.tau = args.tau
         self.use_hard_update = args.use_hard_update
@@ -247,3 +247,4 @@ class Agent_net(object):
 
     def save_model(self, env_name, algorithm, number, seed, total_steps):
         torch.save(self.eval_Q_net.state_dict(), "./model/{}/{}_eval_rnn_number_{}_seed_{}_step_{}k.pth".format(env_name, algorithm, number, seed, int(total_steps / 1000)))
+
