@@ -45,6 +45,5 @@ All passable parameters are listed in main.py with the corresponding description
 ## Acknowledgements
 
 This code includes base implementation of code for QMIX originally written by @Lizhi-sjtu.
-Original source: https://github.com/Lizhi-sjtu/DRL-code-pytorch.git
 
--
+Original source: https://github.com/Lizhi-sjtu/DRL-code-pytorch.git
